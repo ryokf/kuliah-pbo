@@ -6,6 +6,19 @@ public class MahasiswaEnkapsulasi {
     private String alamat;
     private double ipk;
 
+    public MahasiswaEnkapsulasi() {}
+
+    public MahasiswaEnkapsulasi(String nim) {
+        this.nim = nim;
+    }
+
+    public MahasiswaEnkapsulasi(String nim, String nama, String alamat, double ipk) {
+        this.nim = nim;
+        this.nama = nama;
+        this.alamat = alamat;
+        this.ipk = ipk;
+    }
+
     public void setName(String nama) {
         this.nama = nama;
     }
@@ -39,11 +52,11 @@ public class MahasiswaEnkapsulasi {
     }
 
     public String predikat(double ipk){
-        if (this.ipk >= 3.5 && this.ipk <= 4.0) {
+        if (this.ipk >= 3.51 && this.ipk <= 4.0) {
             return "dengan pujian";
-        } else if (this.ipk >= 2.76 && this.ipk < 3.5) {
+        } else if (this.ipk >= 2.76 && this.ipk <= 3.5) {
             return "sangat memuaskan";
-        } else if (this.ipk >= 2.0 && this.ipk < 2.75) {
+        } else if (this.ipk >= 2.0 && this.ipk <= 2.75) {
             return "memuaskan";
         } else {
             return "-";
