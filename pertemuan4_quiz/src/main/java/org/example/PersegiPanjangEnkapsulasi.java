@@ -5,7 +5,6 @@ public class PersegiPanjangEnkapsulasi {
     private double lebar;
     private static int jumlahObjek;
 
-
     public PersegiPanjangEnkapsulasi(double panjangBaru, double lebarBaru) {
         this.panjang = panjangBaru;
         this.lebar = lebarBaru;
